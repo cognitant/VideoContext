@@ -91,7 +91,7 @@ class MediaNode extends SourceNode {
                 this._element = this._mediaElementCache.getElementAndLinkToNode(this);
             } else {
                 this._element = document.createElement(this._elementType);
-                // this._element.setAttribute("crossorigin", "anonymous");
+                this._element.setAttribute("crossorigin", "use-credentials");
                 this._element.setAttribute("webkit-playsinline", "");
                 this._element.setAttribute("playsinline", "");
                 this._playbackRateUpdated = true;

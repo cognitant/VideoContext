@@ -51,7 +51,7 @@ it("plays back  with user supplied element and start offset", () => {
         const ctx = win.ctx;
         const video = win.document.createElement("video");
         video.src = "../assets/video1.webm";
-        video.crossOrigin = "anonymous";
+        // video.crossOrigin = "anonymous";
 
         const sourceOffset = 10;
         const videoNode = ctx.video(video, sourceOffset);

@@ -29,7 +29,7 @@ class ImageNode extends SourceNode {
         if (this._isResponsibleForElementLifeCycle) {
             super._load();
             this._image = new Image();
-            this._image.setAttribute("crossorigin", "anonymous");
+            // this._image.setAttribute("crossorigin", "anonymous");
             // It's important to set the `onload` event before the `src` property
             // https://stackoverflow.com/questions/12354865/image-onload-event-and-browser-cache?answertab=active#tab-top
             this._image.onload = () => {

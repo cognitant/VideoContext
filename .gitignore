@@ -8,12 +8,12 @@ ehthumbs.db
 Thumbs.db
 
 # Map files
-*.map
+#*.map
 
 # Project dependencies
 node_modules
 .nyc_output
 coverage
-/dist
+#/dist
 
 __diff_output__
